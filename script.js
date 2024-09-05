@@ -38,19 +38,19 @@ async function fetchDiscordStatus() {
 		let imagePath;
 		switch (discord_status) {
 			case "online":
-				imagePath = "./public/status/online.svg";
+				imagePath = "https://raw.githubusercontent.com/TTVPoopooumgood/card/main/public/status/online.svg";
 				break;
 			case "idle":
-				imagePath = "./public/status/night-mode.png";
+				imagePath = "https://raw.githubusercontent.com/TTVPoopooumgood/card/main/public/status/idle-mobile.svg";
 				break;
 			case "dnd":
-				imagePath = "./public/status/dnd.svg";
+				imagePath = "https://raw.githubusercontent.com/TTVPoopooumgood/card/main/public/status/dnd.svg";
 				break;
 			case "offline":
-				imagePath = "./public/status/offline.svg";
+				imagePath = "https://raw.githubusercontent.com/TTVPoopooumgood/card/main/public/status/offline.svg";
 				break;
 			default:
-				imagePath = "./public/status/offline.svg";
+				imagePath = "https://raw.githubusercontent.com/TTVPoopooumgood/card/main/public/status/offline.svg";
 				break;
 		}
 
@@ -62,7 +62,7 @@ async function fetchDiscordStatus() {
 						activity.url.includes("youtube.com"))
 			)
 		) {
-			imagePath = "./public/status/streaming.svg";
+			imagePath = "https://raw.githubusercontent.com/TTVPoopooumgood/card/main/public/status/streaming.svg";
 		}
 
 		// Banner
