@@ -1,4 +1,4 @@
-const userID = "1169111190824308768"; // Change this to your Discord user ID
+const userID = "Reverie"; // Change this to your Discord user ID
 
 const elements = {
 	statusBox: document.getElementById("status"),
@@ -18,10 +18,10 @@ const elements = {
 async function fetchKirkaAllScores() {
 	try {
 		const [KirkaResponse, KirkaResponse] = await Promise.all([
-			fetch(`https://api.kirka.io/api/clans/Reverie`).then((response) =>
+			fetch(`https://api.kirka.io/api/clans/${userID}`).then((response) =>
 				response.json()
 			),
-			fetch(`https://api.kirka.io/api/clans/Reverie`).then(
+			fetch(`https://api.kirka.io/api/clans/${userID}`).then(
 				(response) => response.json()
 			),
 		]);
