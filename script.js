@@ -7,7 +7,7 @@ const elements = {
 	avaterDecoration: document.getElementById("avatar-decoration"),
 	bannerImage: document.getElementById("banner-image"),
 	bannerColor: document.querySelector(".banner"),
-	displayName: document.querySelector(".display-name"),
+	name: document.querySelector(".name"),
 	allScores: document.querySelector(".allScores"),
 	badges: document.querySelector(".badges-left"),
 	customStatus: document.querySelector(".custom-status"),
