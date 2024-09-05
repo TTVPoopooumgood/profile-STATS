@@ -8,20 +8,20 @@ const elements = {
 	bannerImage: document.getElementById("banner-image"),
 	bannerColor: document.querySelector(".banner"),
 	displayName: document.querySelector(".display-name"),
-	username: document.querySelector(".username"),
+	allScores: document.querySelector(".allScores"),
 	badges: document.querySelector(".badges-left"),
 	customStatus: document.querySelector(".custom-status"),
 	customStatusText: document.querySelector(".custom-status-text"),
 	customStatusEmoji: document.getElementById("custom-status-emoji"),
 };
 
-async function fetchDiscordStatus() {
+async function fetchKirkaAllScores() {
 	try {
-		const [lanyardResponse, lookupResponse] = await Promise.all([
-			fetch(`https://api.lanyard.rest/v1/users/${userID}`).then((response) =>
+		const [KirkaResponse, KirkaResponse] = await Promise.all([
+			fetch(`https://api.kirka.io/api/clans/Reverie`).then((response) =>
 				response.json()
 			),
-			fetch(`https://discordlookup.mesavirep.xyz/v1/user/${userID}`).then(
+			fetch(`https://api.kirka.io/api/clans/Reverie`).then(
 				(response) => response.json()
 			),
 		]);
